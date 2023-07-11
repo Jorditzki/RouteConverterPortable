@@ -43,7 +43,7 @@ public class Directories {
     private static String getDefaultApplicationDirectory() {
         String directory = System.getProperty(APPLICATION_DIRECTORY_PREFERENCE);
         return directory != null ? directory :
-                System.getProperty("user.home") + separator + ".routeconverter";
+                "." + separator + ".routeconverter";
     }
     private static String getDefaultTemporaryDirectory() {
         String directory = System.getProperty(TEMPORARY_DIRECTORY_PREFERENCE);
